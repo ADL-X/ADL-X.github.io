@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MAVREC- Multiview Aerial Visual RECognition dataset with videos recorded from different perspectives. Rural and urban pastures from European geographies."/>
+    <title>MAVREC- Multiview Aerial Visual RECognition dataset </title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        background: #fdfcf9 no-repeat fixed top left;
+        font-family:'Open Sans', sans-serif;
+      }
+    </style>
+  </head>
+
+
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Multiview Aerial Visual Recognition (MAVREC):</h2> 
+            <!-- <h3>DVD</h3>  -->
+            <h2>Can Multi-view Improve Aerial Visual Perception?</h2>
+             <h4 style="font-size: medium;">Aritra Dutta<sup>1</sup>, Srijan Das<sup>2</sup>, Jacob Nielsen<sup>3</sup>, Rajatsubhra Chakraborty<sup>2</sup>, and Mubarak Shah<sup>1</sup></h4>
+            <p style="font-size: smaller;">1 University of Central Florida, 2 University of North Carolina at Charlotte, 3 University of Southern Denmark</p>
+            <hr>
+            <!-- <h4 style="color:#6e6e6e;"> submitted NeurIPS 2023 </h4> -->
+          
+            <!-- author thing here -->
+
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="src/2312.04548v1-pages-1.pdf" role="button"  target="_blank">
+                    <i class="fa fa-file"></i> Paper</a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" id="code_soon" href="https://drive.google.com/drive/folders/1X7M2EpYpBMA09j-TF8S5mrwTNBGnKhFd?usp=share_link" role="button" 
+                    target="_blank" disabled=1>
+                <!-- <i class="fa fa-github-alt"></i> Data </a> </p> -->
+                <i class="fa fa-database" aria-hidden="true"></i> Data </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/DVD-dataset/dvdv1-code" role="button"  target="_blank">
+                    <i class="fa fa-file"></i> Code </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="src/2312.04548v1-pages-2.pdf" role="button"  target="_blank">
+                    <i class="fa fa-file"></i> Supplementary</a> </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+        <h6 style="color:#8899a5" class="text-center"> 
+              TL;DR; MAVREC- Multiview Aerial Visual RECognition dataset with synchronized videos recorded from different perspectives covering rural and urban pastures from European geographies.
+            </h6>
+          <p style="color:#000; font-weight:bold; font-size:1.5em;" class="text-center">🎉 <strong>MAVREC got accepted in CVPR 2024</strong> 🎉</p>
+
+
+            <div><b style="color:#fd5638; font-size:large" id="demo-warning"></b>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    
+  <!-- Higlight Table -->
+  <section>
+    <div class="container">
+      <table>
+          <tr>
+            <td>
+              <!-- <img src="https://example.com/icon1.png" alt="Icon 1"> -->
+              <i class="fa fa-window-restore over_view_icons" aria-hidden="true"></i>
+              <br>
+             12 Multi-modal Scenes 
+              </td>
+              <td>
+                  <!-- <img src="https://example.com/icon1.png" alt="Icon 1"> -->
+                  <i class="fa fa-picture-o" aria-hidden="true"></i>
+                  <br>
+                  0.5M Frames
+              </td>
+              <td>
+                  <!-- <img src="https://example.com/icon2.png" alt="Icon 2"> -->
+                  <i class="fa fa-th-large" aria-hidden="true"></i>
+                  <br>
+                  1.1M Bounding Boxes
+              </td>
+              <td>
+                  <!-- <img src="https://example.com/icon3.png" alt="Icon 3"> -->
+                  <i class="fa fa-cube" aria-hidden="true"></i>
+                  <br>
+                 10 Object Classes
+              </td>
+              <td>
+                <!-- <img src="https://example.com/icon4.png" alt="Icon 4"> -->
+                <i class="fa fa-file-video-o" aria-hidden="true"></i>
+                <br>
+                2.5 hours of 2.7K resolution video
+            </td>
+          </tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="youtube-embed">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0hf3qP-Lvbg?autoplay=1&mute=1&loop=1&playlist=0hf3qP-Lvbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+ 
+
+  <!-- abstract -->
+  <section style="margin-top: 20px">
+    <br>
+    <hr style="margin: 10px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+           
+          <p class="text-justify">
+              Despite the commercial abundance of UAVs, aerial data acquisition remains challenging, and the existing Asia and North America-centric open-source UAV datasets are small-scale or low-resolution and lack diversity in scene contextuality. Additionally, the color content of the scenes, solar-zenith angle, and population density of different geographies influence the data diversity. These two factors conjointly render suboptimal aerial-visual perception of the deep neural network (DNN) models trained primarily on the ground-view data, including the open-world foundational models. 
+          </p>
+          <p class="text-justify">
+            To pave the way for a transformative era of aerial detection, we present Multiview Aerial Visual RECognition or MAVREC, a video dataset where we record synchronized scenes from different perspectives --- ground camera and drone-mounted camera. MAVREC consists of around 2.5 hours of industry-standard 2.7K resolution video sequences, more than 0.5 million frames, and 1.1 million annotated bounding boxes.~This makes MAVREC the largest ground and aerial-view dataset, and the fourth largest among all drone-based datasets across all modalities and tasks.~Through our extensive benchmarking on MAVEREC, we recognize that augmenting object detectors with ground-view images from the corresponding geographical location is a superior pre-training strategy for aerial detection. Building on this strategy, we benchmark MAVREC with a curriculum-based semi-supervised object detection approach that leverages labeled (ground and aerial) and unlabeled (only aerial) images to enhance the aerial detection.
+          </p>
+    
+        </div>
+        <hr style="margin-top:0px">
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <h3 class="shared-title">Sample Frames</h3>
+    <h6 style="color:#8899a5" class="text-center"> 
+    <div class="container-side-by-side">
+      <img src="src/sample_frames_small.png" class="sample-frame-image" alt="Image 1">
+      <img src="src/different_scenes_extra.png" class="sample-frame-image" alt="Image 2">
+    </div>
+    <div style="margin: 10px auto; width: 60%;">
+      <p class="text-center;">Different sample scenes (with annotation) from our dataset; the first row is the aerial-view, second
+        row presents the same scenes from a ground camera. Similarly, the third row is the aerial-view, and the fourth
+        row presents the same scenes from a ground camera. Some scenes have a dense
+        object annotations, while some scenes have very few object annotations. This high variance in object
+        distribution across different scenes in MAVREC is complementary to datasets like VisDrone where object
+        detection is relatively straightforward due to their biased object distribution (dense), reflecting its
+        demographic characteristics.</p>
+    </div>
+      <hr style="margin-top:0px; width: 60%">
+  </section>
+
+  <section>
+    <br>
+    <h3 class="shared-title">10 Object Classes</h3>
+    <div class="container">
+      <table>
+          <tr>
+            <td>
+              <!-- <img src="https://example.com/icon1.png" alt="Icon 1"> -->
+              <img src="src/ground_aerial_class_distribution_3.png" alt="Image 1">
+              <br>
+             <!-- 12 Multi Modal Scenes  -->
+              </td>
+              <td>
+                  <!-- <img src="https://example.com/icon1.png" alt="Icon 1"> -->
+                  <img class="koko" src="src/ground_aerial_size_distribution_4.png" alt="Image 1">
+                  <br>              
+                
+              </td>
+          </tr>
+        </table>
+      </div>
+      <hr style="margin-top:20px; width: 60%">
+  </section>
+
+
+   <!-- Color Dominans  -->
+   <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Dominant colors in MAVREC and other datasets</h3>
+            <h6 style="color:#8899a5" class="text-center"> 
+                <p class="text-justify; text-align: center; margin-top:10px;">
+                   Dominant colors in sample frames of MAVREC
+                </p>
+              <img style="max-width: 60%; height: auto;" src="src/CD_dvd.png" alt="DVD - Dual-View Drone Dataset Qualitative Results"/>
+              <div style="height: 20px;"></div>
+              <p class="text-justify; text-align: center;">
+                Dominant colors in sample frames of other state-of-the-art drone datasets
+             </p>
+              <img style="max-width: 60%; height: auto;" src="src/CD_others.png" alt="DVD - Dual-View Drone Dataset Qualitative Results"/>
+        </div>
+      </div>
+    </div>
+    <hr style="margin-top:0px; width: 60%">
+  </section>
+
+   <br>
+  <section >
+      <div class="code-container">
+        <h3 class="code-title">MAVREC Toy Dataset</h3>
+        <p class="text-justify; text-align: center;">
+          We provide a small low-resolution toy dataset of MAVREC consisting of 100 images from each view.
+        </p>
+          <a href="https://drive.google.com/drive/folders/1xKTAdPQneUCtcAlvSSPFlyV5dNCrfmWv?usp=share_link">Download Toy Dataset</a>
+      </div>
+      <hr style="margin-top:20px; width: 60%">
+  </section>
+
+
+
+  <br>
+  <section >
+      <div class="code-container">
+        <h3 class="code-title">Annotation Format</h3>
+        <p class="text-justify; text-align: center;">
+            We adopt the MSCOCO Annotation Format. We extend the format of images by adding a scene and a frame identifier. We provide aligned annotation files for corresponding ground and aerial. 
+         </p>
+        <div class="code-table">
+          <div class="code-snippet">
+            <pre>
+              <code>
+                {
+                  "id": 1,
+                  "file_name": "scene_12_sdu_30Sec_droneView_6_000826.PNG",
+                  "height": 337,
+                  "width": 600.0
+                  "scene": 12,
+                  "frameID": 826,
+                },
+              </code>
+            </pre>
+          </div>
+          <!-- <div class="code-snippet">
+            <pre>
+              <code>
+                // Second code snippet
+                function goodbyeWorld() {
+                  console.log("Goodbye, World!");
+                }
+                goodbyeWorld();
+              </code>
+            </pre>
+          </div> -->
+        </div>
+      </div>
+      <hr style="margin-top:20px; width: 60%">
+  </section>
+
+  <!-- Qualitative Results -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Qualitative Results</h3>
+            <h6 style="color:#8899a5" class="text-center"> 
+              <img style="max-width: 60%; height: auto;" src="src/qualitative_results.png" alt="DVD - Dual-View Drone Dataset Qualitative Results"/>
+        </div>
+      </div>
+    </div>
+    <!-- <hr style="margin-top:0px; width: 60%"> -->
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <h3>Citation</h3>
+            <hr>
+            <pre><code>@misc{dutta2023multiview,
+  title={Multiview Aerial Visual Recognition (MAVREC): Can Multi-view Improve Aerial Visual Perception?},
+  author={Aritra Dutta and Srijan Das and Jacob Nielsen and Rajatsubhra Chakraborty and Mubarak Shah},
+  year={2023},
+  eprint={2312.04548},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Usage Licence -->
+  <section style="margin-top: 20px">
+    <br>
+    <hr style="margin: 10px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Usage Licence</h3>
+          <p class="text-justify">
+             The dataset is protected under the CC-BY license of creative commons, which allows the users to distribute, remix, adapt, and build upon the material in any medium or format, as long as the creator is attributed. The license allows MAVREC for commercial use. As the authors of this manuscript and collectors of this dataset, we reserve the right to distribute the data. 
+          </p>
+        </div>
+        <hr style="margin-top:0px">
+      </div>
+    </div>
+  </section>
+  <footer class="text-center" style="margin-bottom:10px; font-size: medium;">
+      <hr>
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the <a href="https://lioryariv.github.io/idr/" target="_blank">website template</a>.
+  </footer>
+ 
+  <!-- demo video -->
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Matches on ScanNet-756</h3>
+            <hr style="margin-top:0px">
+            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls="" id="scannet_vid">
+              <source src="src/Cortex_Park_crossroads1.mp4" type="video/mp4">
+            </video>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>   -->
+
+  <!-- overview video -->
+  <!-- 
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Overview video (5 min)</h3>
+            <hr style="margin-top:0px">
+            <div class="embed-responsive embed-responsive-16by9"> 
+                <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%" src="https://www.youtube.com/embed/ep015Dda0T0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+
+  <!-- pipeline 
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Pipeline overview</h3>
+            <hr style="margin-top:0px">
+            <!-- <div class="embed-responsive embed-responsive-16by9"> -->
+                <!-- <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%" src="https://www.youtube.com/embed/EpmnpwwaR14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> -->
+            <!-- </div> 
+                <img class="img-fluid" src="images/loftr-arch.png" alt="LoFTR Architechture">
+            <hr>
+            <p class="text-justify">
+              LoFTR has four components:
+              \(\textbf{1.}\) A local feature CNN extracts
+              the coarse-level feature maps 
+              $\tilde{F}^A$ and $\tilde{F}^B$,
+              together with the fine-level feature maps 
+              $\hat{F}^A$ and $\hat{F}^B$
+              from the image pair $I^A$ and $I^B$.
+              \(\textbf{2.}\)  The coarse feature maps are flattened to 1-D vectors and added with the
+              positional encoding.
+              The added features are then processed by the Local Feature TRansformer (LoFTR) module, which has $N_c$ self-attention and cross-attention layers.
+              \(\textbf{3.}\) A differentiable matching layer is used to match the transformed features, which ends up with a confidence matrix $\mathcal{P}_c$. 
+              The matches in $\mathcal{P}_c$ are selected according to the confidence threshold and mutual-nearest-neighbor criteria, 
+              yielding the coarse-level match prediction $\mathcal{M}_c$.
+              \(\textbf{4.}\) For every selected coarse prediction $(\tilde{i}, \tilde{j}) \in \mathcal{M}_c$,
+              a local window with size $w\times w$ is cropped from the fine-level feature map.
+              Coarse matches will be refined within this local window to a sub-pixel level as the final match prediction $\mathcal{M}_f$.
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- demo video with orig 
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Matches on a low-texture area</h3>
+            <!-- <h3>Matches on </h3> 
+            <p class="text-left"> 
+              Data is captured using an iPhone, color indicates the match confidence.</p>
+          <hr style="margin-top:0px">
+            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls="" id="inspect_vid">
+              <source src="images/loftr-matches-compare.mp4" type="video/mp4">
+            </video>
+        </div>
+      </div>
+      <br>
+      <div class="row justify-content-center">
+        <div class="column">
+            <p class="mb-5"><a class="btn btn-large btn-light" role="button"  onclick="changePlaybackSpeed(0.125)"
+              target="_blank" disabled=1>
+          <i class="fa "></i> <span style="color:#ffffff;">0.5x speed</span></a> </p>
+        </div>
+        <div class="column">
+            <p class="mb-5"><a class="btn btn-large btn-light" role="button" onclick="changePlaybackSpeed(0.5)"
+              target="_blank" disabled=1>
+          <i class="fa fa-github-alt"></i> <span style="color:#ffffff;">2x speed</span></a> </p>
+        </div>
+        <br>
+        <br>
+    </div>
+  </section>
+  <br>  
+
+  <!-- compare 
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Qualitative comparison with <a href="https://psarlin.com/superglue">SuperGlue</a></h3>
+            <hr style="margin-top:0px">
+            <p class="text-justify">
+              Data is captured using an iPhone, color indicates the match confidence.
+            </p>
+            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls="" id="compare_vid">
+              <source src="images/loftr_spg_compare.mp4" type="video/mp4">
+            </video>
+            <!-- <div class="embed-responsive embed-responsive-16by9"> -->
+                <!-- <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%" src="https://www.youtube.com/embed/EpmnpwwaR14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> -->
+            <!-- </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- feature visualization 
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Visualizations on the attention weights and the transformed features in LoFTR</h3>
+            <hr style="margin-top:0px">
+            <img class="img-fluid" src="images/feature-vis.png" alt="Feature Visualization">
+            <hr style="margin-top:0px">
+            <p class="text-justify">
+              We use PCA to reduce the dimension of the transformed features and visualize the results with RGB color.
+              The visualization for attention weights demonstrate that the features in indistinctive or low-texture regions are able to aggregate local and global context information through self-attention and cross-attention.
+              In the first two examples, the query point from the low-texture region is able to aggregate the surrounding global information flexibly. 
+              For instance, the point on the chair is looking at the edge of the chair. 
+              In the last two examples, the query point from the distinctive region can also utilize the richer information from other regions.
+              The feature visualization with PCA further shows that LoFTR learns a position-dependent feature representation.
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- more videos 
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>More matching results</h3>
+            <hr style="margin-top:0px">
+            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="images/street_dance.m4v" type="video/mp4">
+            </video>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br> -->
+
+  <!-- citing 
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Citation</h3>
+          <hr style="margin-top:0px">
+              <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
+<code>@article{sun2021loftr,
+  title={{LoFTR}: Detector-Free Local Feature Matching with Transformers},
+  author={Sun, Jiaming and Shen, Zehong and Wang, Yuang and Bao, Hujun and Zhou, Xiaowei},
+  journal={CVPR},
+  year={2021}
+}</code></pre>
+          <hr>
+      </div>
+    </div>
+  </div>
+
+  <!-- ack 
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Acknowledgements</h3>
+          <hr style="margin-top:0px">
+          <p class="text-justify">
+            We would like to specially thank Reviewer 1 for the insightful and constructive comments. 
+            We provide additional responses to Reviewer 1 regarding the naming of this paper in the supplementary material.
+            We would like to thank Sida Peng and Qi Fang for the proof-reading, and Hongcheng Zhao for generating the visualizations.
+          </p>
+          <hr>
+      </div>
+    </div>
+  </div>
+
+  <!-- rec 
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Recommendations to other works from our group</h3>
+          <hr style="margin-top:0px">
+          <p class="text-justify">
+            Welcome to checkout our work on real-time 3D reconstruction (<a href="http://zju3dv.github.io/neuralrecon/">NeuralRecon</a>) and human reconstruction (<a href="http://zju3dv.github.io/neuralbody">NeuralBody</a> and <a href="http://zju3dv.github.io/Mirrored-Human">Mirrored-Human</a>) in CVPR 2021.
+          </p>
+      </div>
+    </div>
+  </div> -->
+
+  <script type="text/javascript">
+    function changePlaybackSpeed(speed)
+        {
+            document.getElementById('inspect_vid').playbackRate = speed;
+        }
+        changePlaybackSpeed(0.25)
+
+    var demo = document.getElementById("demo");
+    var startTime;
+    var timeout = undefined;
+    demo.addEventListener("loadstart", function() {
+      startTime = Date.now();
+      timeout = setTimeout(function () {
+        var demoWarning = document.getElementById("demo-warning");
+        var giteeLink = document.createElement("a");
+        giteeLink.innerText = "mirror hosted in mainland China";
+        giteeLink.href = "https://project-pages-1255496016.cos-website.ap-shanghai.myqcloud.com/loftr/";
+        // var bilibiliLink = document.createElement("a");
+        // var youtubeLink = document.createElement("a");
+        // bilibiliLink.innerText = "BiliBili";
+        // bilibiliLink.href = "";
+        // youtubeLink.innerText = "YouTube";
+        // youtubeLink.href = "";
+
+        demoWarning.append("Loading the videos took too long, you can optionally visit this site in the ", giteeLink, ".");
+        // demoWarning.append("Loading the video took too long, you can optionally watch it on Bilibili", bilibiliLink, " or YouTube", youtubeLink, ".");
+        clearTimeout(timeout);
+        timeout = undefined;
+      }, 6000);
+    });
+    demo.addEventListener("loadeddata", function() {
+      if (timeout) {
+        clearTimeout(timeout);
+        timeout = undefined;
+      }
+    });
+//     var source = document.createElement("source");
+//     source.setAttribute("src", "images/loftr-homepage-demo.mp4");
+//     source.setAttribute("type", "video/webm");
+//     demo.appendChild(source);
+  </script>
+  <script>
+    MathJax = {
+      tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</body>
+</html>
+
