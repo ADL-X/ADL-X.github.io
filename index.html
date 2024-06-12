@@ -39,35 +39,62 @@
           
             <!-- author thing here -->
 
-            <div class="row justify-content-center">
-              <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button"  target="_blank">
-                    <i class="fa fa-file"></i> arXiv</a> </p>
-              </div>
-              <div class="column">
-                <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button"  target="_blank">
-                  <i class="fa fa-file"></i>Model</a> </p>
-            </div>
-              <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" id="code_soon" href="" role="button" 
-                    target="_blank" disabled=1>
-                <!-- <i class="fa fa-github-alt"></i> Data </a> </p> -->
-                <i class="fa fa-database" aria-hidden="true"></i> Data </a> </p>
-              </div>
-              <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com//llavidal" role="button"  target="_blank">
-                    <i class="fa fa-file"></i> Code </a> </p>
-              </div>
-              <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button"  target="_blank">
-                    <i class="fa fa-file"></i> Supplementary</a> </p>
-              </div>
-            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                   <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+                 </span>
+
+              <!-- Supplementary PDF link -->
+              <span class="link-block">
+                <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Supplementary</span>
+              </a>
+              </span>
+
+            <!-- Github link -->
+            <span class="link-block">
+              <a href="https://github.com/YOUR REPO HERE" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Code</span>
+            </a>
+            </span>
+
+          <!-- ArXiv abstract Link -->
+          <span class="link-block">
+            <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="ai ai-arxiv"></i>
+            </span>
+            <span>arXiv</span>
+          </a>
+          </span>
+        </div>
+      </div>
+            
+          
             
           </div>
         </div>
       </div>
     </div>
+
+    
   </section>
 
   <section>
@@ -588,4 +615,6 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </body>
 </html>
+
+
 
