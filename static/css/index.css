@@ -112,17 +112,29 @@ body {
 
 .results-carousel {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Adjust based on your requirements */
 }
-
 .results-carousel .item {
   margin: 5px;
   overflow: hidden;
   padding: 20px;
   font-size: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.results-carousel video {
-  margin: 0;
+.results-carousel img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.subtitle {
+  font-size: 1rem; /* Resetting the font-size for subtitle */
 }
 
 .slider-pagination .slider-page {
