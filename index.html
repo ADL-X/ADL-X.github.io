@@ -71,7 +71,7 @@
                     <span class="author-block">
                       <a href="https://webpages.charlotte.edu/pwang13/" target="_blank">Pu Wang</a>,</span>
                       <span class="author-block">
-                        <a href="" target="_blank">Francois Bremond</a><sup> &#8224;</sup>,
+                        <a href="https://www-sop.inria.fr/stars/Francois.Bremond/" target="_blank">Francois Bremond</a><sup> &#8224;</sup>,
                       </span>
                       <span class="author-block">
                         <a href="https://srijandas07.github.io/" target="_blank">Srijan Das</a></span>
@@ -95,21 +95,6 @@
                         <span>arXiv</span>
                       </a>
                     </span>
-
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    
-                    
-
                   <!-- Github link -->
                   <span class="link-block">
                     <a href="https://github.com/ADL-X/LLAVIDAL" target="_blank"
@@ -131,16 +116,6 @@
                   </a>
               </span>
 
-               <!-- Supplementary PDF link -->
-                <span class="link-block">
-                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Supplementary</span>
-                </a>
-              </span>
               
             </div>
           </div>
@@ -155,7 +130,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+      <video poster="" id="tree" autoplay muted loop height="100%">
         <!-- Your video here -->
         <source src="static/videos/adlxteaser_final.mp4"
         type="video/mp4">
@@ -198,14 +173,14 @@ ADL-X trained LLAVIDAL model triumphs in understanding complex human-object inte
         <!-- Your image here -->
         <img src="static/images/ADL-Data curation process.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          ADL-X Data Curation Process.
+          ADL-X Data Curation Process
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/ADL-architecture.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          LLAVIDAL Architecture.
+          LLAVIDAL Architecture
         </h2>
       </div>
   </div>
@@ -214,61 +189,125 @@ ADL-X trained LLAVIDAL model triumphs in understanding complex human-object inte
 </section>
 <!-- End image carousel -->
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
+<section class="hero is-small">
+  <div class="container">
+    <div class="results-grid">
+      <div class="item">
+        <img src="static/images/object_Action.png" alt="Quantitative Result 1">
+        <h2 class="subtitle">Scores of Object and Action Values for Charades and TSU</h2>
+      </div>
+      <div class="item">
+        <img src="static/images/charades_SH.png" alt="Quantitative Result 2">
+        <h2 class="subtitle">Accuracy of Action Recognition Task  for Charades and Smarthome</h2>
+      </div>
+      <div class="item">
+        <img src="static/images/lemma_TSU.png" alt="Quantitative Result 3">
+        <h2 class="subtitle">Accuracy of Action Forecasting Task  for LEMMA and TSU</h2>
+      </div>
+      <div class="item">
+        <img src="static/images/ADLMCQ-AR.png" alt="Quantitative Result 4">
+        <h2 class="subtitle">ADLMCQ Action Recognition </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/ADLMCQ-AF.png" alt="Quantitative Result 5">
+        <h2 class="subtitle">ADLMCQ Action Forecasting</h2>
+      </div>
+      <div class="item">
+        <img src="static/images/AD.png" alt="Quantitative Result 6">
+        <h2 class="subtitle">Action Description</h2>
+      </div>
+      <div class="item">
+        <img src="static/images/Impact_of_ADL-X_Training.png" alt="Quantitative Result 7">
+        <h2 class="subtitle">Impact of ADL-X Training</h2>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- 
+<div class="containerQA">
+  <div class="video-container"> -->
+      <!-- For Video -->
+      <!-- <video controls>
+          <source src="static/videos/carousel2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video> -->
+      <!-- For GIF
+      <img src="static/images/your-gif.gif" alt="Sequence of person standing up">
+      -->
+  <!-- </div>
+  <div class="question-container">
+      <p>Q. Is the person going to fall?</p>
+  </div>
+  <div class="answers-container">
+      <div class="answer incorrect">
+          <img src="static/images/video-llava.png" alt="Icon 1">
+          <p>The person falls.</p>
+          <span class="icon">❌</span>
+      </div>
+      <div class="answer incorrect">
+          <img src="static/images/video-llama.png" alt="Icon 2">
+          <p>The person has fallen.</p>
+          <span class="icon">❌</span>
+      </div>
+      <div class="answer incorrect">
+          <img src="static/images/video-chatgpt.png" alt="Icon 3">
+          <p>Yes, the person in the video is seen falling off the chair.</p>
+          <span class="icon">❌</span>
+      </div>
+      <div class="answer correct">
+          <img src="static/images/llavidal.png" alt="Icon 4">
+          <p>Yes, the person is in a precarious position, as they are sitting on the edge of the chair which could potentially cause them to fall.</p>
+          <span class="icon">✔️</span>
+      </div>
+  </div>
+</div> -->
+
+
+
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%" >
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+      <div class="container">
+          <h2 class="title is-3">Qualitative Evaluation</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+          
+              <div class="item item-video1">
+                  <video poster="" id="video1" autoplay muted loop height="100%">
+                      <source src="static/videos/carousel1.mp4" type="video/mp4">
+                  </video>
+                  <div class="image-container">
+                    <img src="static/images/AR-QA-1.png" alt="Questions and Answers">
+                </div>
+                 
+              </div>
+              
+         
+              <div class="item item-video2">
+                <video poster="" id="video1" autoplay muted loop height="100%">
+                    <source src="static/videos/carousel1.mp4" type="video/mp4">
+                </video>
+                <div class="image-container">
+                  <img src="static/images/AR-QA-1.png" alt="Questions and Answers">
+              </div>
+               
+            </div>
+           
+              <div class="item item-video3">
+                <video poster="" id="video3" autoplay muted loop height="100%">
+                    <source src="static/videos/carousel1.mp4" type="video/mp4">
+                </video>
+                <div class="image-container">
+                  <img src="static/images/AR-QA-1.png" alt="Questions and Answers">
+              </div>
+               
+            </div>
+              
+          </div>
       </div>
-    </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -279,7 +318,14 @@ ADL-X trained LLAVIDAL model triumphs in understanding complex human-object inte
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{
+        title={LLAVIDAL: Benchmarking Large Language Vision Models for Daily Activities of Living },
+        author={Rajatsubhra Chakraborty, Arkaprava Sinha, Dominick Reilly, Manish Kumar Govind, Pu Wang, Francois Bremond and Srijan Das},
+        year={2024},
+        eprint={},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+      }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
